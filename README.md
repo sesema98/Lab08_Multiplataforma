@@ -1,17 +1,47 @@
 # Lab08_Multiplataforma
 
-A new Flutter project.
+Aplicacion multiplataforma desarrollada en Flutter para gestionar productos con un flujo simple de inicio de sesion, menu principal, registro, listado, perfil y cierre de sesion.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- Login con validacion de email y password.
+- Menu principal con accesos a las vistas de la aplicacion.
+- Registro de productos con 5 campos: marca, nombre, categoria, precio y stock.
+- Lista de productos implementada con `ListView`.
+- Perfil de usuario con datos mostrados en labels.
+- Pantalla de salida para cerrar sesion y volver al login.
 
-A few resources to get you started if this is your first Flutter project:
+## Tecnologias
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- Material Design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Ejecutar el proyecto
+
+Primero instala las dependencias:
+
+```bash
+flutter pub get
+```
+
+Para correrlo en Chrome:
+
+```bash
+flutter run -d chrome
+```
+
+Para correrlo en un emulador o dispositivo movil:
+
+```bash
+flutter devices
+flutter run -d <device_id>
+```
+
+## Estructura principal
+
+- `lib/main.dart`: configuracion principal de la aplicacion y rutas.
+- `lib/screens/login_screen.dart`: pantalla de inicio de sesion.
+- `lib/screens/home_screen.dart`: menu, registro, lista, perfil y salida.
+- `lib/models/product.dart`: modelo de producto.
+- `lib/app_theme.dart`: tema visual de la aplicacion.
